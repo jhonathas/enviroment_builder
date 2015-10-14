@@ -11,11 +11,17 @@
 #done
 
 echo "Installing Command Line Tools \n"
-xcode-select --install
-echo "\nDone!\n"
-echo "\n"
 
-echo "Installing Homebrew and Homebrew Bundle\n"
+xcode-select --install
+
+echo "\nDone!\n"
+
+
+echo "Installing Homebrew, Bundle and Apps on Brewfile\n"
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap Homebrew/bundle
+
+brew bundle
+
 echo "\nDone!\n"
